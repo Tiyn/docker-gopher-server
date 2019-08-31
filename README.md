@@ -22,9 +22,9 @@ Set the following volumes with the -v tag.
 
 Set the following ports with the -p tag.
 
-| Container port | recommended outside port | Description |
-| -------------- | ------------------------ |  ---------- |
-| 70  | 70 | port for the gopher-protocol |
+| Container port | Recommended outside port | Protocol | Description |
+| -------------- | ------------------------ | ------- | ---------- |
+| 70  | 70 | TCP | port for the gopher-protocol |
 
 ## Example run-command
 
