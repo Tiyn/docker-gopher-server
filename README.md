@@ -10,8 +10,22 @@ Set the following variables with the -e tag.
 | ------------- | ----- | ------- |
 | SERVER_NAME  | set this to your IP/Domain (no "gopher://" needed!) | localhost |
 
-## Example build/run-command
+## Volumes
 
-``` docker build -t gopherserver . ```
+Set the following volumes with the -v tag.
 
-``` docker run -d -v gophermartenkante:/var/gopher -p 70:70 --restart unless-stopped -e SERVER_NAME='martenkante.de' --name gophermartenkante gopherserver ```
+| Volume-Name          | Container mount | Description |
+| -------------------- | --------------- | ----------- |
+| gopherwebdir  | /var/gopher | directory for the gopher page |
+
+## Ports
+
+Set the following ports with the -p tag.
+
+| Container port | recommended outside port | Description |
+| -------------- | ------------------------ |  ---------- |
+| 70  | 70 | port for the gopher-protocol |
+
+## Example run-command
+
+``` docker run --name gopherserver -v gopherwebdir:/var/gopher -p 70:70 --restart unless-stopped -e SERVER_NAME=<domain/ip_here> -d tiynger/gopherserver ```
