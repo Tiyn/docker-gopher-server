@@ -1,8 +1,8 @@
-#DockerGopherServer
+# DockerGopherServer
 
 This is a dockerized version of a gopher server.
 
-##Environment-variables
+## Environment-variables
 
 Set the following variables with the -e tag.
 
