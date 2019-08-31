@@ -10,7 +10,7 @@ Set the following variables with the -e tag.
 | ------------- | ----- | ------- |
 | SERVER_NAME  | set this to your IP/Domain (no "gopher://" needed!) | localhost |
 
-##example build/run-command
+## Example build/run-command
 
 ``` docker build -t gopherserver . ```
 
