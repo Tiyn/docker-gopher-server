@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:18.04
 
 MAINTAINER mail@martenkante.de
 
@@ -10,7 +10,7 @@ RUN apt-get install pygopherd -y
 
 ADD run.sh /
 
-RUN chmod +x run.sh 
+RUN chmod +x run.sh
 
 VOLUME /var/gopher
 
